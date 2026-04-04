@@ -1,6 +1,6 @@
 # LuminOS Discord Bot
 
-A modular, production-ready Discord bot for the LuminOS community, a Debian 13.4 + KDE Plasma distribution with local AI at its core.
+A modular, production-ready Discord bot for the LuminOS community, a Debian 13.4 + KDE Plasma distribution with local AI at its core. This Bot includes a lot of features such as Project Info, Welcome Automation, Ticket features, Moderation, Fun, Linux Commands, Starboard, GitHub Updates,etc.
 
 ## Features
 
