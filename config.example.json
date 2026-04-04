@@ -1,0 +1,104 @@
+{
+  "bot_prefix": "!",
+  "theme_color": 49407,
+  "guild_id": 0,
+  "owner_ids": [],
+  "channels": {
+    "welcome": 0,
+    "bug_reports": 0,
+    "feature_requests": 0,
+    "moderation_log": 0,
+    "command_log": 0,
+    "github_updates": 0,
+    "status": 0
+  },
+  "roles": {
+    "default": 0,
+    "tester": 0,
+    "developer": 0,
+    "moderator_mention": 0
+  },
+  "links": {
+    "github": "https://github.com/4LuminOS",
+    "website": "https://example.org"
+  },
+  "project": {
+    "name": "LuminOS",
+    "tagline": "A Debian 13.4 + KDE Plasma Linux distribution with local AI at its core.",
+    "vision": "A privacy-first, ethically minded Linux distribution that combines a polished KDE desktop with offline local AI, a modern installer workflow, and a community-driven roadmap.",
+    "features": [
+      "Debian 13.4 base with KDE Plasma",
+      "Concurrent Go ISO builder with Bubble Tea TUI",
+      "Local AI packaging via Ollama",
+      "Custom Calamares installer configuration",
+      "Zero-telemetry, offline-first defaults",
+      "Community-led development workflow"
+    ],
+    "roadmap": [
+      {
+        "phase": "Phase 0: The Foundation",
+        "description": "Build the engine and assemble the crew. Lock the Debian 13.4 + KDE Plasma stack, rewrite the core ISO builder in Go, structure the Discord server/workflows/GitHub/core roles, finish the mini website, decide how local AI integrates, and finalize the age-verification policy."
+      },
+      {
+        "phase": "Phase 1: First Prototype (Alpha)",
+        "description": "Deliver a working bootable Live OS with local AI inside: package Ollama successfully, choose the default browser, polish KDE dotfiles/panel transparency, and configure a custom Calamares installer."
+      },
+      {
+        "phase": "Phase 2: The Smart OS Era",
+        "description": "Turn the OS into an assistant: add a safe agentic AI runtime via Go wrappers, autosuspend models on heavy gaming or low-RAM systems, let users choose between recent models, and keep privacy and ethics as hard defaults."
+      },
+      {
+        "phase": "Phase 3: The Beta",
+        "description": "Stress-test across Nvidia, AMD, and older laptops; run closed community testing; polish UX and performance; and gather feedback from Linux users about missing features and expectations."
+      },
+      {
+        "phase": "Phase 4: Public Launch",
+        "description": "Release the public beta ISO, ship full docs/wikis/SEO-ready website updates, publish the hardware matrix, and launch the social presence and community outreach."
+      }
+    ]
+  },
+  "status": {
+    "current_build_status": "Active development and nightly verification",
+    "latest_version": "0.1.0-alpha",
+    "build_notes": "Installer flow is being polished and core desktop theming is under active iteration."
+  },
+  "github": {
+    "repo_owner": "4LuminOS",
+    "repo_name": "LuminOS",
+    "poll_interval_minutes": 5
+  },
+  "tickets": {
+    "category_id": 0,
+    "log_channel_id": 0,
+    "support_role_id": 0,
+    "ticket_channel_prefix": "ticket",
+    "max_open_tickets": 1,
+    "ping_support_role": true
+  },
+  "anti_spam": {
+    "message_limit": 5,
+    "window_seconds": 8,
+    "timeout_seconds": 30
+  },
+  "welcome": {
+    "dm_message": "Welcome to the LuminOS community. Please read #rules and start in #start-here.",
+    "assign_default_role": true
+  },
+  "logging": {
+    "local_file": true,
+    "file_path": "logs/bot.log"
+  },
+  "reaction_roles": {
+    "123456789012345678": {
+      "👍": 0,
+      "👎": 0
+    }
+  },
+  "warning_cases": [],
+  "starboard": {
+    "channel_id": 0,
+    "emoji": "⭐",
+    "threshold": 3,
+    "excluded_channel_ids": []
+  }
+}
