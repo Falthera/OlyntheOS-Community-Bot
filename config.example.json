@@ -19,7 +19,7 @@
     "moderator_mention": 0
   },
   "links": {
-    "github": "https://github.com/4OlyntheOS",
+    "github": "https://github.com/OlyntheOS",
     "website": "https://example.org"
   },
   "project": {
@@ -63,7 +63,7 @@
     "build_notes": "Installer flow is being polished and core desktop theming is under active iteration."
   },
   "github": {
-    "repo_owner": "4OlyntheOS",
+    "repo_owner": "OlyntheOS",
     "repo_name": "OlyntheOS",
     "poll_interval_minutes": 5
   },
