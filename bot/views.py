@@ -7,7 +7,7 @@ def _truncate(value: str, limit: int = 1024) -> str:
     return value if len(value) <= limit else value[: limit - 3] + "..."
 
 
-class BugReportModal(discord.ui.Modal, title="LuminOS Bug Report"):
+class BugReportModal(discord.ui.Modal, title="OlyntheOS Bug Report"):
     def __init__(self, bot: discord.Client):
         super().__init__(timeout=300)
         self.bot = bot
@@ -47,7 +47,7 @@ class BugReportModal(discord.ui.Modal, title="LuminOS Bug Report"):
         await interaction.response.send_message("Your bug report has been submitted. Thank you.", ephemeral=True)
 
 
-class FeatureRequestModal(discord.ui.Modal, title="LuminOS Feature Request"):
+class FeatureRequestModal(discord.ui.Modal, title="OlyntheOS Feature Request"):
     def __init__(self, bot: discord.Client):
         super().__init__(timeout=300)
         self.bot = bot

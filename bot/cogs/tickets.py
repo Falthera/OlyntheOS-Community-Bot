@@ -11,7 +11,7 @@ from discord.ext import commands
 from bot.utils import make_embed
 
 
-TICKET_TOPIC_PREFIX = "LuminOS-TICKET"
+TICKET_TOPIC_PREFIX = "OlyntheOS-TICKET"
 
 TICKET_TYPES: dict[str, tuple[str, str]] = {
     "support": ("Support", "🛠️"),
@@ -63,7 +63,7 @@ class TicketTypeSelect(discord.ui.Select):
             min_values=1,
             max_values=1,
             options=options,
-            custom_id="luminos:tickets:type-select",
+            custom_id="olyntheos:tickets:type-select",
         )
         self.bot = bot
 
@@ -82,7 +82,7 @@ class TicketPanelOpenButton(discord.ui.Button):
             label="Open Ticket",
             style=discord.ButtonStyle.primary,
             emoji="🎫",
-            custom_id="luminos:tickets:open",
+            custom_id="olyntheos:tickets:open",
         )
         self.bot = bot
 
@@ -110,7 +110,7 @@ class TicketControlView(discord.ui.View):
     def _channel(self, interaction: discord.Interaction) -> discord.TextChannel | None:
         return interaction.channel if isinstance(interaction.channel, discord.TextChannel) else None
 
-    @discord.ui.button(label="Claim", style=discord.ButtonStyle.primary, emoji="🧷", custom_id="luminos:tickets:claim")
+    @discord.ui.button(label="Claim", style=discord.ButtonStyle.primary, emoji="🧷", custom_id="olyntheos:tickets:claim")
     async def claim_button(self, interaction: discord.Interaction, button: discord.ui.Button) -> None:
         cog = self._cog()
         channel = self._channel(interaction)
@@ -125,7 +125,7 @@ class TicketControlView(discord.ui.View):
         await cog.claim_ticket(channel, member)
         await interaction.response.send_message("Ticket claimed.", ephemeral=True)
 
-    @discord.ui.button(label="Unclaim", style=discord.ButtonStyle.secondary, emoji="♻️", custom_id="luminos:tickets:unclaim")
+    @discord.ui.button(label="Unclaim", style=discord.ButtonStyle.secondary, emoji="♻️", custom_id="olyntheos:tickets:unclaim")
     async def unclaim_button(self, interaction: discord.Interaction, button: discord.ui.Button) -> None:
         cog = self._cog()
         channel = self._channel(interaction)
@@ -140,7 +140,7 @@ class TicketControlView(discord.ui.View):
         await cog.unclaim_ticket(channel)
         await interaction.response.send_message("Ticket unclaimed.", ephemeral=True)
 
-    @discord.ui.button(label="Transcript", style=discord.ButtonStyle.secondary, emoji="📄", custom_id="luminos:tickets:transcript")
+    @discord.ui.button(label="Transcript", style=discord.ButtonStyle.secondary, emoji="📄", custom_id="olyntheos:tickets:transcript")
     async def transcript_button(self, interaction: discord.Interaction, button: discord.ui.Button) -> None:
         cog = self._cog()
         channel = self._channel(interaction)
@@ -160,7 +160,7 @@ class TicketControlView(discord.ui.View):
         else:
             await interaction.response.send_message(file=transcript, ephemeral=True)
 
-    @discord.ui.button(label="Close", style=discord.ButtonStyle.danger, emoji="🔒", custom_id="luminos:tickets:close")
+    @discord.ui.button(label="Close", style=discord.ButtonStyle.danger, emoji="🔒", custom_id="olyntheos:tickets:close")
     async def close_button(self, interaction: discord.Interaction, button: discord.ui.Button) -> None:
         cog = self._cog()
         channel = self._channel(interaction)

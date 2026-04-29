@@ -15,7 +15,7 @@ class GitHubCog(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.session: aiohttp.ClientSession | None = None
-        self.logger = logging.getLogger("luminos.github")
+        self.logger = logging.getLogger("olyntheos.github")
         self.repo_missing_reported = False
 
     async def cog_load(self) -> None:

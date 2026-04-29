@@ -91,7 +91,7 @@ class StarboardCog(commands.Cog):
                 embed.add_field(name="Attachment", value=attachment.url, inline=False)
         if message.embeds:
             embed.add_field(name="Embeds", value=f"{len(message.embeds)} embed(s) attached", inline=True)
-        embed.set_footer(text="LuminOS Starboard")
+        embed.set_footer(text="OlyntheOS Starboard")
         return embed
 
     async def _upsert_starboard_entry(self, message: discord.Message, stars: int) -> None:

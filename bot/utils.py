@@ -6,7 +6,7 @@ from typing import Iterable
 import discord
 
 
-def make_embed(title: str, description: str, color: int, footer: str = "LuminOS Community Bot") -> discord.Embed:
+def make_embed(title: str, description: str, color: int, footer: str = "OlyntheOS Community Bot") -> discord.Embed:
     embed = discord.Embed(title=title, description=description, color=color, timestamp=datetime.now(timezone.utc))
     embed.set_footer(text=footer, icon_url="https://cdn-icons-png.flaticon.com/512/906/906343.png")
     return embed

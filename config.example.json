@@ -19,11 +19,11 @@
     "moderator_mention": 0
   },
   "links": {
-    "github": "https://github.com/4LuminOS",
+    "github": "https://github.com/4OlyntheOS",
     "website": "https://example.org"
   },
   "project": {
-    "name": "LuminOS",
+    "name": "OlyntheOS",
     "tagline": "A Debian 13.4 + KDE Plasma Linux distribution with local AI at its core.",
     "vision": "A privacy-first, ethically minded Linux distribution that combines a polished KDE desktop with offline local AI, a modern installer workflow, and a community-driven roadmap.",
     "features": [
@@ -63,8 +63,8 @@
     "build_notes": "Installer flow is being polished and core desktop theming is under active iteration."
   },
   "github": {
-    "repo_owner": "4LuminOS",
-    "repo_name": "LuminOS",
+    "repo_owner": "4OlyntheOS",
+    "repo_name": "OlyntheOS",
     "poll_interval_minutes": 5
   },
   "tickets": {
@@ -81,7 +81,7 @@
     "timeout_seconds": 30
   },
   "welcome": {
-    "dm_message": "Welcome to the LuminOS community. Please read #rules and start in #start-here.",
+    "dm_message": "Welcome to the OlyntheOS community. Please read #rules and start in #start-here.",
     "assign_default_role": true
   },
   "logging": {

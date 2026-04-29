@@ -15,7 +15,7 @@ from bot.config import BotConfig, ConfigError, load_config
 from bot.logging_utils import configure_logging
 
 
-class LuminOSBot(commands.Bot):
+class OlyntheOSBot(commands.Bot):
     def __init__(self, config: BotConfig, config_path: str = "config.json"):
         intents = discord.Intents.default()
         intents.members = True
@@ -25,7 +25,7 @@ class LuminOSBot(commands.Bot):
         super().__init__(command_prefix=config.bot_prefix, intents=intents, help_command=None)
         self.config = config
         self.config_path = config_path
-        self.logger = logging.getLogger("luminos.bot")
+        self.logger = logging.getLogger("olyntheos.bot")
         self.command_history: dict[int, deque[datetime]] = defaultdict(deque)
         self.last_github_event_id: str | None = None
 
@@ -169,5 +169,5 @@ def run_bot() -> None:
 
     config = load_config()
     configure_logging(bool(config.logging.get("local_file", True)), config.logging.get("file_path", "logs/bot.log"))
-    bot = LuminOSBot(config)
+    bot = OlyntheOSBot(config)
     bot.run(token)

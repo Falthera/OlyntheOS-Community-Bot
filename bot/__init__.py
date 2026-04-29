@@ -1,1 +1,1 @@
-"""LuminOS Discord bot package."""
+"""OlyntheOS Discord bot package."""
